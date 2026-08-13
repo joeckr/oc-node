@@ -1,0 +1,7 @@
+node:
+  name: node
+  app: node
+  replicaCount: 1
+  image: ghcr.io/joeckr/node
+  tag: lts
+  port: 3000

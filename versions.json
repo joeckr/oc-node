@@ -1,0 +1,20 @@
+[
+  {
+    "node": 26,
+    "alpine": 3.24,
+    "latest": true,
+    "lts": false
+  },
+  {
+    "node": 24,
+    "alpine": 3.24,
+    "latest": false,
+    "lts": true
+  },
+  {
+    "node": 22,
+    "npm": 10,
+    "latest": false,
+    "lts": false
+  }
+]

@@ -1,0 +1,6 @@
+apiVersion: v2
+name: chart
+description: A Helm chart for joeckr node
+type: application
+version: 1.0.0
+appVersion: "26"

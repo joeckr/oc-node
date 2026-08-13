@@ -1,0 +1,22 @@
+{
+  "name": "oc-node",
+  "version": "1.0.0",
+  "description": "oc compliant node image",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeckr/oc-node.git"
+  },
+  "author": "joeckr",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/joeckr/oc-node/issues"
+  },
+  "homepage": "https://github.com/joeckr/oc-node#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.node.name }}
+  labels:
+    app: {{ .Values.node.app }}
+spec:
+  replicas: {{ .Values.node.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Values.node.app }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.node.app }}
+    spec:
+      automountServiceAccountToken: false
+      containers:
+        - name: {{ .Values.node.name }}
+          image: "{{ .Values.node.image }}:{{ .Values.node.tag }}"
+          imagePullPolicy: {{ .Values.node.pullPolicy }}
+          ports:
+            - containerPort: {{ .Values.node.port }}
+              name: {{ .Values.node.name }}
+          env:
+            - name: PORT
+              value: {{ .Values.node.port | quote }}
