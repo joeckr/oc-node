@@ -13,7 +13,7 @@
   },
   {
     "node": 22,
-    "npm": 10,
+    "alpine": 3.21,
     "latest": false,
     "lts": false
   }
